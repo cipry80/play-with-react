@@ -2,6 +2,7 @@ $ = jQuery = require('jquery');
 const React = require('react');
 const Home = require('./components/homePage');
 const About = require('./components/about/aboutPage');
+const Header = require('./components/common/header');
 
 
 const App = React.createClass({
@@ -14,6 +15,7 @@ const App = React.createClass({
         }
         return (
             <div>
+                <Header/>
                 <Child/>
             </div>
         );
